@@ -292,15 +292,16 @@ body {
     width: 14px;
     height: 14px;
     border-radius: 50%;
+    border: 1px solid #FFFFFF;
     margin-top: 4px;
 }
 
 .dot.systolic {
-    background-color: #C26EB4;
+    background: #E66FD2 0% 0% no-repeat padding-box;
 }
 
 .dot.diastolic {
-    background-color: #7E6CAB;
+    background: #8C6FE6 0% 0% no-repeat padding-box;
 }
 
 .legend-label {
@@ -312,14 +313,26 @@ body {
 
 .legend-value {
     font-size: 22px;
-    font-weight: 700;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 0px;
     color: #072635;
     margin-bottom: 4px;
 }
 
 .legend-status {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0px;
     color: #072635;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legend-status img {
+    width: 10px;
+    height: 5px;
 }
 
 /* Vital Signs Cards */
