@@ -29,17 +29,9 @@ body {
     margin: 18px;
 }
 
-.logo h1 {
-    font-size: 24px;
-    color: #072635;
-    display: flex;
-    align-items: center;
-}
-
-.logo h1::before {
-    content: "🏥";
-    margin-right: 8px;
-    font-size: 28px;
+.logo img {
+    width: 211px;
+    height: 48px;
 }
 
 .nav-menu {
