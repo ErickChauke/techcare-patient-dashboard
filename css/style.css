@@ -44,7 +44,7 @@ body {
 .nav-item {
     text-decoration: none;
     color: #072635;
-    padding: 12px 20px;
+    padding: 11px 20px;
     border-radius: 41px;
     font-size: 14px;
     font-weight: bold;
@@ -66,7 +66,7 @@ body {
 }
 
 .nav-item.active {
-    background-color: #01f0d0;
+    background: #01F0D0 0% 0% no-repeat padding-box;
     color: #072635;
 }
 
