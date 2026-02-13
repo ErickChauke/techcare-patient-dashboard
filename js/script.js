@@ -159,12 +159,12 @@ function createBloodPressureChart() {
                 {
                     label: 'Systolic',
                     data: systolicData,
-                    borderColor: '#e66fd2',
-                    backgroundColor: 'rgba(230, 111, 210, 0.1)',
+                    borderColor: '#C26EB4',
+                    backgroundColor: 'rgba(194, 110, 180, 0.1)',
                     borderWidth: 2,
                     tension: 0.4,
                     pointRadius: 6,
-                    pointBackgroundColor: '#e66fd2',
+                    pointBackgroundColor: '#C26EB4',
                     pointBorderColor: '#fff',
                     pointBorderWidth: 2,
                     pointHoverRadius: 8
@@ -172,12 +172,12 @@ function createBloodPressureChart() {
                 {
                     label: 'Diastolic',
                     data: diastolicData,
-                    borderColor: '#8c6fe6',
-                    backgroundColor: 'rgba(140, 111, 230, 0.1)',
+                    borderColor: '#7E6CAB',
+                    backgroundColor: 'rgba(126, 108, 171, 0.1)',
                     borderWidth: 2,
                     tension: 0.4,
                     pointRadius: 6,
-                    pointBackgroundColor: '#8c6fe6',
+                    pointBackgroundColor: '#7E6CAB',
                     pointBorderColor: '#fff',
                     pointBorderWidth: 2,
                     pointHoverRadius: 8
