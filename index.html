@@ -3,10 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechCare Dashboard</title>
+    <title>Tech.Care - Patient Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <div class="container">
+        <!-- Header/Navigation -->
+        <header class="navbar">
+            <div class="logo">
+                <h1>Tech.Care</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item">
+                    <span>🏠</span> Overview
+                </a>
+                <a href="#" class="nav-item active">
+                    <span>👥</span> Patients
+                </a>
+                <a href="#" class="nav-item">
+                    <span>📅</span> Schedule
+                </a>
+                <a href="#" class="nav-item">
+                    <span>💬</span> Message
+                </a>
+                <a href="#" class="nav-item">
+                    <span>💳</span> Transactions
+                </a>
+            </nav>
+            <div class="user-profile">
+                <img src="images/doctor.jpg" alt="Dr. Jose Simmons">
+                <div class="user-info">
+                    <p class="user-name">Dr. Jose Simmons</p>
+                    <p class="user-role">General Practitioner</p>
+                </div>
+                <button class="settings-btn">⚙️</button>
+                <button class="more-btn">⋮</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Left Sidebar - Patients List -->
+            <aside class="patients-sidebar">
+                <div class="sidebar-header">
+                    <h2>Patients</h2>
+                    <button class="search-btn">🔍</button>
+                </div>
+                <ul class="patients-list" id="patientsList">
+                    <!-- Will be populated by JavaScript -->
+                </ul>
+            </aside>
+
+            <!-- Center - Diagnosis History -->
+            <section class="diagnosis-section">
+                <h2>Diagnosis History</h2>
+                
+                <!-- Blood Pressure Chart -->
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3>Blood Pressure</h3>
+                        <select class="time-filter">
+                            <option>Last 6 months</option>
+                        </select>
+                    </div>
+                    <canvas id="bloodPressureChart"></canvas>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="dot systolic"></span>
+                            <div>
+                                <p class="legend-label">Systolic</p>
+                                <p class="legend-value" id="systolicValue">160</p>
+                                <p class="legend-status">▲ Higher than Average</p>
+                            </div>
+                        </div>
+                        <div class="legend-item">
+                            <span class="dot diastolic"></span>
+                            <div>
+                                <p class="legend-label">Diastolic</p>
+                                <p class="legend-value" id="diastolicValue">78</p>
+                                <p class="legend-status">▼ Lower than Average</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vital Signs Cards -->
+                <div class="vital-signs">
+                    <div class="vital-card respiratory">
+                        <div class="vital-icon">🫁</div>
+                        <p class="vital-label">Respiratory Rate</p>
+                        <p class="vital-value" id="respiratoryRate">20 bpm</p>
+                        <p class="vital-status">Normal</p>
+                    </div>
+                    <div class="vital-card temperature">
+                        <div class="vital-icon">🌡️</div>
+                        <p class="vital-label">Temperature</p>
+                        <p class="vital-value" id="temperature">98.6°F</p>
+                        <p class="vital-status">Normal</p>
+                    </div>
+                    <div class="vital-card heart-rate">
+                        <div class="vital-icon">❤️</div>
+                        <p class="vital-label">Heart Rate</p>
+                        <p class="vital-value" id="heartRate">78 bpm</p>
+                        <p class="vital-status">▼ Lower than Average</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Sidebar - Patient Profile -->
+            <aside class="patient-profile">
+                <div class="profile-image">
+                    <img src="images/jessica.jpg" alt="Jessica Taylor" id="patientImage">
+                </div>
+                <h2 id="patientName">Jessica Taylor</h2>
+                
+                <div class="patient-info">
+                    <div class="info-item">
+                        <span class="icon">📅</span>
+                        <div>
+                            <p class="info-label">Date Of Birth</p>
+                            <p class="info-value" id="dob">August 23, 1996</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">⚥</span>
+                        <div>
+                            <p class="info-label">Gender</p>
+                            <p class="info-value" id="gender">Female</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <div>
+                            <p class="info-label">Contact Info.</p>
+                            <p class="info-value" id="phone">(415) 555-1234</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <div>
+                            <p class="info-label">Emergency Contacts</p>
+                            <p class="info-value" id="emergencyContact">(415) 555-5678</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">🛡️</span>
+                        <div>
+                            <p class="info-label">Insurance Provider</p>
+                            <p class="info-value" id="insurance">Sunrise Health Assurance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="show-all-btn">Show All Information</button>
+            </aside>
+        </main>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
