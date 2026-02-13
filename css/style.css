@@ -123,19 +123,19 @@ body {
 /* Main Content Layout */
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: 367px 1fr 367px;
+    gap: 32px;
+    padding: 14px 18px 18px;
     flex: 1;
 }
 
 /* Left Sidebar - Patients List */
 .patients-sidebar {
-    background-color: white;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
     padding: 20px;
     height: fit-content;
-    max-height: calc(100vh - 140px);
+    max-height: calc(100vh - 122px);
     overflow-y: auto;
 }
 
