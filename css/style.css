@@ -19,12 +19,12 @@ body {
 
 /* Header/Navigation */
 .navbar {
-    background-color: white;
-    padding: 15px 30px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    height: 72px;
+    padding: 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     border-radius: 70px;
     margin: 18px;
 }
