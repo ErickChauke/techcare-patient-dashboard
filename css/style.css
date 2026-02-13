@@ -115,6 +115,11 @@ body {
     height: 20px;
 }
 
+.more-btn img {
+    width: 4px;
+    height: 18px;
+}
+
 /* Main Content Layout */
 .main-content {
     display: grid;
