@@ -417,7 +417,11 @@ body {
 
 .patient-profile h2 {
     font-size: 24px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0px;
     color: #072635;
+    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -438,37 +442,41 @@ body {
     border-bottom: none;
 }
 
-.info-item .icon {
-    font-size: 32px;
+.info-icon {
     width: 42px;
     height: 42px;
-    background-color: #f6f7f8;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-shrink: 0;
 }
 
 .info-label {
-    font-size: 12px;
-    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
     margin-bottom: 4px;
 }
 
 .info-value {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: bold;
+    line-height: 19px;
+    letter-spacing: 0px;
     color: #072635;
+    text-transform: capitalize;
 }
 
 .show-all-btn {
-    width: 100%;
-    padding: 15px;
-    background-color: #01f0d0;
+    width: 220px;
+    height: 41px;
+    background: #01F0D0 0% 0% no-repeat padding-box;
     border: none;
     border-radius: 41px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: bold;
+    line-height: 19px;
+    letter-spacing: 0px;
     color: #072635;
     cursor: pointer;
     transition: background-color 0.3s;
