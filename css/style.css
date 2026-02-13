@@ -382,11 +382,19 @@ body {
 .vital-status {
     font-size: 12px;
     color: #072635;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.vital-status img {
+    width: 10px;
+    height: 5px;
 }
 
 /* Right Sidebar - Patient Profile */
 .patient-profile {
-    background-color: white;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
     padding: 30px;
     text-align: center;
