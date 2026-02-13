@@ -57,8 +57,8 @@ body {
 }
 
 .nav-item img {
-    width: 16px;
     height: 17px;
+    width: auto;
 }
 
 .nav-item:hover {
