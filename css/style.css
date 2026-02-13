@@ -21,7 +21,7 @@ body {
 .navbar {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     height: 72px;
-    padding: 0 30px;
+    padding: 0 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
