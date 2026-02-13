@@ -227,8 +227,9 @@ body {
 
 /* Center Section - Diagnosis History */
 .diagnosis-section {
-    background-color: white;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
+    height: fit-content;
     padding: 30px;
 }
 
