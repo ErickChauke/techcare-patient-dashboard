@@ -361,7 +361,8 @@ body {
 }
 
 .vital-icon {
-    font-size: 60px;
+    width: 96px;
+    height: 96px;
     margin-bottom: 15px;
 }
 
