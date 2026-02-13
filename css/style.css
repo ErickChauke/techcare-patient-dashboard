@@ -230,7 +230,7 @@ body {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
     height: fit-content;
-    padding: 30px;
+    padding: 20px;
 }
 
 .diagnosis-section h2 {
@@ -326,7 +326,7 @@ body {
 .vital-signs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 21px;
 }
 
 .vital-card {
@@ -336,7 +336,7 @@ body {
 }
 
 .vital-card.respiratory {
-    background-color: #e0f3fa;
+    background: #E0F3FA 0% 0% no-repeat padding-box;
 }
 
 .vital-card.temperature {
