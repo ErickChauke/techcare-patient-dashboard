@@ -244,7 +244,7 @@ body {
 
 /* Blood Pressure Chart */
 .chart-container {
-    background-color: #f4f0fe;
+    background: #F4F0FE 0% 0% no-repeat padding-box;
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
