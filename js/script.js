@@ -68,7 +68,7 @@ function populatePatientsList() {
                 <h3>${patient.name}</h3>
                 <p>${patient.gender}, ${patient.age}</p>
             </div>
-            <button class="patient-more">⋯</button>
+            <button class="patient-more"><img src="img/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="More"></button>
         `;
 
         patientsList.appendChild(listItem);
