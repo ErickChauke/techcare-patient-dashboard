@@ -340,11 +340,11 @@ body {
 }
 
 .vital-card.temperature {
-    background-color: #ffe6e9;
+    background: #FFE6E9 0% 0% no-repeat padding-box;
 }
 
 .vital-card.heart-rate {
-    background-color: #ffe6f1;
+    background: #FFE6F1 0% 0% no-repeat padding-box;
 }
 
 .vital-icon {
